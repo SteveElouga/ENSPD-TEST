@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/th.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+    <script src="assets/js/dev.js" defer></script>
+    <script src="assets/js/slide.js" defer></script>
+    <title>ENSPD PROJECT</title>
+</head>
+
+<body class="bg-black text-white scroll-smooth">
+    <div class="grid grid-cols-2 overflow-hidden rounded-t-3xl rounded-b-3xl">
+        <div>
+            <header class="flex justify-center items-center font-semibold h-28">
+                <div>
+                    <img src="assets/img/pexels-scott-webb-430205.jpg" alt="Leonardo_Diffusion"
+                        class="rounded-full w-20 cursor-pointer hover:w-16 transition-all duration-100 ease-linear">
+                </div>
+            </header>
+
+            <div class="relative">
+                <div class="flex justify-center items-center flex-col gap-5 transition-transform duration-500 ease-in-out"
+                    id="contain">
+                    <h1 class="font-semibold" data-aos="fade-down">Connexion</h1>
+                    <form action="" method="post" class="flex justify-center items-start flex-col gap-5 px-5"
+                        data-aos="fade-up">
+                        <div class="relative w-full h-[50px] border-b-2 border-white input-box">
+                            <span class="absolute right-[8px] text-[1.2em] leading-[57px] top-[20%]"><ion-icon
+                                    name="mail"></ion-icon></span>
+                            <input type="email" name="email"
+                                class="w-[90%] border-none outline-none absolute left-0 top-[40%] bg-transparent monInput pl-2 h-[30px] email"
+                                oninput="checkInput()" required>
+
+                            <label for="email"
+                                class="absolute  left-0 top-[50%]  pointer-events-none transition-all duration-300 ease-in-out font-semibold"
+                                id="labelMonInput">Email</label>
+                        </div>
+                        <div class="relative w-full h-[50px] border-b-2 border-white input-box ">
+                            <span
+                                class="absolute right-[8px] text-[1.2em] leading-[57px] cursor-default top-[20%]"><ion-icon
+                                    name="lock-closed"></ion-icon></span>
+                            <input type="passeword" name="mdp"
+                                class="w-[90%] border-none outline-none absolute left-0 top-[40%] monInput pl-2 h-[30px] bg-transparent mdp"
+                                oninput="checkInput()" required>
+                            <label for="mdp"
+                                class="absolute  left-0 top-[50%]  pointer-events-none transition-all duration-300 ease-in-out font-semibold"
+                                id="labelMonInput">Mot de passe</label>
+                        </div>
+
+                        <div
+                            class="bg-transparent w-full h-[50px] flex justify-center items-center mt-5 border-2 border-white rounded-md hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
+                            <button type="button" class="h-full w-full font-semibold">Connexion</button>
+                        </div>
+
+                        <div class="text-[14px] w-full text-center">Vous n'avez pas de compte? <span id="right"
+                                class="underline cursor-pointer">S'inscrire</span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex justify-center items-center flex-col gap-5 transition-transform duration-500 ease-in-out absolute top-0 left-0 w-full translate-x-[200%] opacity-1"
+                    id="containe">
+                    <h1 class="font-semibold" data-aos="fade-down">Inscription</h1>
+                    <form action="connexion.html" method="post"
+                        class="flex justify-center items-start flex-col gap-5 px-5" data-aos="fade-up">
+                        <div class="relative w-full h-[50px] border-b-2 border-white input-box">
+                            <span class="absolute right-[8px] text-[1.2em] leading-[57px] top-[20%]"><ion-icon
+                                    name="mail"></ion-icon></span>
+                            <input type="email" name="email"
+                                class="w-[90%] border-none outline-none absolute left-0 top-[40%] bg-transparent monInput pl-2 h-[30px] email"
+                                oninput="checkInput()" required>
+
+                            <label for="email"
+                                class="absolute  left-0 top-[50%]  pointer-events-none transition-all duration-300 ease-in-out font-semibold"
+                                id="labelMonInput">Email</label>
+                        </div>
+                        <div class="relative w-full h-[50px] border-b-2 border-white input-box ">
+                            <span
+                                class="absolute right-[8px] text-[1.2em] leading-[57px] cursor-default top-[20%]"><ion-icon
+                                    name="finger-print"></ion-icon></span>
+                            <input type="text" name="matricule" id="matricule"
+                                class="w-[90%] border-none outline-none absolute left-0 top-[40%] monInput pl-2 h-[30px] bg-transparent"
+                                oninput="checkInput()" required>
+                            <label for="matricule"
+                                class="absolute  left-0 top-[50%]  pointer-events-none transition-all duration-300 ease-in-out font-semibold"
+                                id="labelMonInput">Matricule</label>
+                        </div>
+                        <div class="text-gray-700 mt-[20px] w-full ">
+                            <select name="niveau" id="niveau"
+                                class="outline-none hover:cursor-pointer h-[40px] w-[80%] bg-transparent text-white -pl-1 font-semibold ml-[-5px]">
+                                <optgroup label="Cycle 1" class="bg-black" id="cycle1">
+                                    <option>Choisir le niveau</option>
+                                    <option value="niveau1">Niveau 1</option>
+                                    <option value="niveau2">Niveau 2</option>
+                                    <option value="niveau3">Niveau 3</option>
+                                </optgroup>
+                                <optgroup label="Cycle 2" class="bg-black" id="cycle2">
+                                    <option value="niveau4">Niveau 4</option>
+                                    <option value="niveau5">Niveau 5</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="h-[30px]  flex items-end relative">
+                            <span class="absolute right-[8px] text-[1.2em] cursor-default top-[20%] "><ion-icon
+                                    name="school-outline"></ion-icon></span>
+                            <label for="matricule" class="font-semibold mr-3">Filieres</label>
+                            <input type="text" name="filiere" id="filiere" placeholder="Filiere selectionnee"
+                                class=" pl-2 bg-transparent border-b-2 border-white outline-none" required>
+                        </div>
+                        <div class="relative w-full h-[50px] border-b-2 border-white input-box ">
+                            <span
+                                class="absolute right-[8px] text-[1.2em] leading-[57px] cursor-default top-[20%]"><ion-icon
+                                    name="lock-closed"></ion-icon></span>
+                            <input type="passeword" name="mdp"
+                                class="w-[90%] border-none outline-none absolute left-0 top-[40%] monInput pl-2 h-[30px] bg-transparent mdp"
+                                oninput="checkInput()" required>
+                            <label for="mdp"
+                                class="absolute  left-0 top-[50%]  pointer-events-none transition-all duration-300 ease-in-out font-semibold"
+                                id="labelMonInput">Mot de passe</label>
+                        </div>
+
+                        <div
+                            class="bg-transparent w-full h-[50px] flex justify-center items-center mt-5 border-2 border-white rounded-md hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
+                            <button type="submit" class="h-full w-full font-semibold">Inscription</button>
+                        </div>
+
+                        <div class="text-[14px] w-full text-center">Vous n'avez pas de compte? <span id="left"
+                                class="underline cursor-pointer">Se
+                                connecter</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/img/pexels-ann-h-1762851.jpg" alt="universit"
+                class="image hover:cursor-pointer  w-full object-cover h-screen">
+        </div>
+    </div>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

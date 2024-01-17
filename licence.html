@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSPD PROJECT</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/th.jpg" type="image/x-icon">
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/dev.js" defer></script>
+</head>
+
+<body class="bg-black text-white scroll-smooth h-screen">
+    <div class="grid grid-cols-2 overflow-hidden rounded-t-3xl rounded-b-3xl h-full">
+        <div>
+            <!-- Header Section -->
+            <header class="flex justify-between items-center font-semibold pr-4 h-28">
+                <div>
+                    <!-- Logo -->
+                    <img src="assets/img/Leonardo_Diffusion_XL_A_logo_expressing_a_studentcentric_atmos_3.jpg"
+                        alt="Leonardo_Diffusion"
+                        class="rounded-full w-20 cursor-pointer hover:w-16 transition-all duration-100 ease-linear">
+                </div>
+                <div class="flex justify-center items-center gap-5">
+                    <!-- Navigation Links -->
+                    <div class="surlign" id="connexion">Se connecter</div>
+                    <div class="surlign" id="inscription">S'inscrire</div>
+                </div>
+            </header>
+
+            <!-- Content Section -->
+            <section class="flex justify-center items-center flex-col mt-10">
+                <h1 class="font-semibold">Niveaux</h1>
+                <ion-icon name="arrow-down" class="mt-5 animate-bounce w-6 h-6"></ion-icon>
+                <div class="text-[25px]">
+                    <!-- Niveaux Buttons -->
+                    <div class="my-5 border-2 p-5 cursor-pointer btn annee" data-aos="fade-left" data-aos-delay="50">1ere Annee</div>
+                    <div class="my-5 border-2 p-5 cursor-pointer btn annee" data-aos="fade-left" data-aos-delay="300">2eme Annee</div>
+                    <div class="border-2 p-5 cursor-pointer btn annee" data-aos="fade-left" data-aos-delay="600">3eme Annee</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Image Section -->
+        <div data-aos="fade-down" data-aos-duration="1500">
+            <img src="assets/img/Leonardo_Diffusion_XL_Generate_a_detailed_image_of_a_universit_0.jpg" alt="universit"
+                class="image hover:cursor-pointer w-full object-cover h-full">
+        </div>
+    </div>
+
+    <!-- Spinner Container -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Ionicons Library -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

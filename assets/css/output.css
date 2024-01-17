@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    @apply p-4 overflow-x-hidden font-[Montserrat];
+}
+
+.spinner-container {
+    @apply fixed top-0 left-0 w-full h-full bg-white bg-opacity-80 flex justify-center items-center;
+}
+
+.spinner {
+    @apply border-4 border-solid border-gray-900 border-t-4 border-t-gray-200 rounded-full w-10 h-10 animate-spin;
+}
+
+.surlign{
+    @apply relative w-fit cursor-pointer
+}
+.surlign::before{
+    @apply content-[""]  w-0 left-0 right-0 bottom-0 top-0 absolute  border-b-2 border-white transition-all duration-200 ease-linear
+}
+.surlign:hover::before{
+    @apply w-full 
+}
+
+.btn{
+    @apply relative overflow-hidden 
+}
+.btn::before{
+    @apply content-[""] absolute top-0 left-0 bg-gray-300 w-full h-full backdrop-blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out
+}
+.btn:hover::before{
+    @apply opacity-10
+}
+
+label{
+    @apply top-[30%]
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    @apply top-[-7px]
+}
+
+.input-box input~label.hide-label{
+    @apply top-[-7px]
+}
